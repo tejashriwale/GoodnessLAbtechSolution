@@ -1,0 +1,206 @@
+================================================================================
+  GOODNESS LABTECH SOLUTIONS - WEBSITE QUICK START GUIDE
+================================================================================
+
+📁 PROJECT LOCATION:
+   D:\PROJECT\GOODNESSLAB\goodnesslab
+
+================================================================================
+🚀 HOW TO RUN THE WEBSITE (EASIEST METHOD)
+================================================================================
+
+1. Double-click: run-dev.bat
+   (This file is in the project folder)
+
+2. Wait for the message: "Ready in X.Xs"
+
+3. Open your web browser and go to:
+   http://localhost:3000
+
+4. To stop: Press Ctrl+C in the command window
+
+================================================================================
+🔧 FIRST TIME SETUP (Only needed once)
+================================================================================
+
+Before using run-dev.bat for the first time:
+
+1. Open Command Prompt
+2. Navigate to project:
+   cd D:\PROJECT\GOODNESSLAB\goodnesslab
+
+3. Install dependencies:
+   npm install
+
+4. Wait for installation to complete
+5. Now you can use run-dev.bat anytime!
+
+================================================================================
+📚 AVAILABLE DOCUMENTATION
+================================================================================
+
+README.md
+→ Complete project documentation
+→ All features, technologies, and pages explained
+→ Development guide and troubleshooting
+
+DEPLOYMENT-GUIDE.md
+→ How to deploy to Vercel (free hosting)
+→ Domain setup instructions
+→ SSL, analytics, and SEO setup
+
+CONTENT-UPDATE-GUIDE.md
+→ How to update text, images, and content
+→ Non-technical guide for content editors
+→ No coding knowledge required
+
+================================================================================
+🌐 WEBSITE PAGES
+================================================================================
+
+All 14 pages are complete and ready:
+
+Main Pages:
+  • Home (/)
+  • Services Overview (/services)
+  • Contact Us (/contact)
+  • About Us (/about)
+
+Service Detail Pages:
+  • Mechanical Testing
+  • Chemical Testing
+  • Microstructure & Metallography
+  • Corrosion Testing
+  • Failure Analysis
+
+About Sub-pages:
+  • Testimonials
+  • Quality Policy
+  • Instruments/Equipment
+
+================================================================================
+📝 QUICK EDITS
+================================================================================
+
+To change company info (phone, email, address):
+→ Edit: src/lib/constants.ts
+
+To change testimonials:
+→ Edit: src/lib/testimonials-data.ts
+
+To add/edit services:
+→ Edit: src/lib/services-data.ts
+
+To add equipment:
+→ Edit: src/lib/equipment-data.ts
+
+To change colors:
+→ Edit: src/styles/variables.css
+
+After editing any file:
+→ Save the file
+→ Refresh your browser (changes appear automatically)
+
+================================================================================
+🔨 BUILD FOR PRODUCTION
+================================================================================
+
+When ready to deploy:
+
+1. Double-click: run-build.bat
+2. Wait for build to complete
+3. Deploy to Vercel (see DEPLOYMENT-GUIDE.md)
+
+================================================================================
+📞 COMPANY INFORMATION (Current)
+================================================================================
+
+Name:     Goodness Labtech Solutions LLP
+Phone:    +91-7058300308
+Email:    info@goodnesslab.in
+Address:  Second Floor, Swara Enterprise Building
+          Block- J/536/3, MIDC Bhosari
+          Pimpri Chinchwad, Pune-411039
+          Maharashtra, India
+
+Accreditation: NABL (ISO 17025:2017)
+
+================================================================================
+✅ PROJECT STATUS
+================================================================================
+
+✓ All 8 main tasks completed
+✓ 14 pages fully functional
+✓ Responsive design (mobile/tablet/desktop)
+✓ SEO optimized
+✓ Forms with validation
+✓ Google Maps integrated
+✓ WhatsApp integration
+✓ Production ready
+
+Build Status: ✅ PASSING
+Ready to Deploy: ✅ YES
+
+================================================================================
+🆘 TROUBLESHOOTING
+================================================================================
+
+Problem: "npm is not recognized"
+Solution: Install Node.js from https://nodejs.org
+
+Problem: "Port 3000 already in use"
+Solution: Close other programs using port 3000, or use:
+          npm run dev -- -p 3001
+
+Problem: Page doesn't load
+Solution: 1. Check terminal for errors
+          2. Restart server (Ctrl+C, then run-dev.bat again)
+          3. Clear browser cache (Ctrl+Shift+R)
+
+Problem: Changes don't appear
+Solution: 1. Make sure file is saved
+          2. Refresh browser
+          3. Check for error messages in terminal
+
+================================================================================
+📖 NEED MORE HELP?
+================================================================================
+
+For detailed instructions, see:
+→ README.md (comprehensive documentation)
+→ DEPLOYMENT-GUIDE.md (deployment steps)
+→ CONTENT-UPDATE-GUIDE.md (content editing)
+
+For technical support:
+→ Next.js Docs: https://nextjs.org/docs
+→ React Docs: https://react.dev
+
+================================================================================
+🎯 NEXT STEPS
+================================================================================
+
+Immediate:
+  1. Run the website locally (run-dev.bat)
+  2. Review all pages
+  3. Add actual laboratory photos
+  4. Replace placeholder content if any
+
+Short-term:
+  1. Get NABL certificate PDFs
+  2. Add real equipment photos
+  3. Deploy to Vercel
+  4. Set up custom domain
+
+Long-term:
+  1. Add Gallery page
+  2. Add News & Events
+  3. Implement API for contact forms
+  4. Add more testimonials
+
+================================================================================
+
+Last Updated: January 2026
+Version: 1.0.0
+Status: ✅ Production Ready
+
+================================================================================

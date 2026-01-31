@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Images Guide - Goodness Labtech Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        .priority {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .priority.high {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+
+        .priority.medium {
+            background: #fef3c7;
+            color: #d97706;
+        }
+
+        .priority.low {
+            background: #dbeafe;
+            color: #2563eb;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f9fafb;
+            border-radius: 8px;
+            border-left: 4px solid #1e40af;
+        }
+
+        h2 {
+            color: #1e40af;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .image-placeholder {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            color: white;
+        }
+
+        .image-info {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .image-info strong {
+            color: #1e40af;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .aspect-box {
+            position: relative;
+            width: 100%;
+            background: #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .aspect-hero {
+            padding-bottom: 40%; /* 16:9 ish ratio for hero */
+            min-height: 300px;
+        }
+
+        .aspect-standard {
+            padding-bottom: 75%; /* 4:3 ratio */
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-card {
+            background: white;
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+
+        .image-card:hover {
+            border-color: #1e40af;
+            box-shadow: 0 4px 6px rgba(30, 64, 175, 0.1);
+        }
+
+        .filename {
+            background: #1e40af;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 0.9em;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .tips {
+            background: #f0f9ff;
+            border: 2px solid #0284c7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .tips h3 {
+            color: #0284c7;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .example-link {
+            background: #f59e0b;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .example-link:hover {
+            background: #d97706;
+        }
+
+        .checkmark {
+            color: #059669;
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔬 Laboratory Images Guide</h1>
+        <p class="subtitle">Visual guide for adding professional laboratory images to your website</p>
+
+        <!-- Hero Section -->
+        <div class="section">
+            <h2>1. Homepage Hero Background <span class="priority high">HIGH PRIORITY</span></h2>
+            <p><strong>This is the first thing visitors see on your website</strong></p>
+
+            <div class="filename">/images/hero/lab-background.jpg</div>
+
+            <div class="aspect-box aspect-hero">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                    <div style="font-size: 2em; margin-bottom: 10px;">🔬 Laboratory Background Image</div>
+                    <div style="font-size: 1em; opacity: 0.8;">Recommended: 1920x1080px or larger</div>
+                </div>
+            </div>
+
+            <div class="image-info">
+                <strong>Image Content Suggestions:</strong>
+                <ul>
+                    <li>Professional laboratory interior with modern equipment</li>
+                    <li>Testing equipment like microscopes, analyzers, or spectrometers</li>
+                    <li>Clean, well-lit environment showing professionalism</li>
+                    <li>Optional: Lab technician in professional attire working</li>
+                </ul>
+                <strong style="margin-top: 10px;">Reference:</strong>
+                <a href="https://elcalabs.com/" class="example-link" target="_blank">View ELCA Labs Example →</a>
+            </div>
+        </div>
+
+        <!-- About Page Hero -->
+        <div class="section">
+            <h2>2. About Page Hero Background <span class="priority high">HIGH PRIORITY</span></h2>
+            <p><strong>Background image for the About Us page header</strong></p>
+
+            <div class="filename">/images/about/facility.jpg</div>
+
+            <div class="aspect-box aspect-hero">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                    <div style="font-size: 2em; margin-bottom: 10px;">🏢 Facility Background</div>
+                    <div style="font-size: 1em; opacity: 0.8;">Laboratory exterior or modern interior view</div>
+                </div>
+            </div>
+
+            <div class="image-info">
+                <strong>Image Content Suggestions:</strong>
+                <ul>
+                    <li>Laboratory building exterior or entrance</li>
+                    <li>Panoramic view of laboratory interior</li>
+                    <li>Professional facility showcasing modern infrastructure</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Facility Showcase -->
+        <div class="section">
+            <h2>3. Laboratory Facility Showcase <span class="priority medium">MEDIUM PRIORITY</span></h2>
+            <p><strong>Three images displayed on the About page showing different aspects of your facility</strong></p>
+
+            <div class="grid">
+                <div class="image-card">
+                    <div class="filename">lab-facility-1.jpg</div>
+                    <div class="aspect-box aspect-standard">
+                        <span>Testing Laboratory</span>
+                    </div>
+                    <div class="image-info">
+                        <strong>Shows:</strong> Testing equipment and laboratory workspace
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <div class="filename">lab-facility-2.jpg</div>
+                    <div class="aspect-box aspect-standard">
+                        <span>Quality Control</span>
+                    </div>
+                    <div class="image-info">
+                        <strong>Shows:</strong> Quality control area or precision instruments
+                    </div>
+                </div>
+
+                <div class="image-card">
+                    <div class="filename">lab-facility-3.jpg</div>
+                    <div class="aspect-box aspect-standard">
+                        <span>Expert Team</span>
+                    </div>
+                    <div class="image-info">
+                        <strong>Shows:</strong> Team at work or equipment close-up
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="tips">
+            <h3>📸 Photography Tips & Guidelines</h3>
+            <ul>
+                <li><strong>Resolution:</strong> Minimum 1920px width for hero images, 1200px for others</li>
+                <li><strong>Format:</strong> JPG or WebP (WebP recommended for better performance)</li>
+                <li><strong>Lighting:</strong> Well-lit, professional-looking images work best</li>
+                <li><strong>Composition:</strong> Avoid cluttered backgrounds, focus on equipment and cleanliness</li>
+                <li><strong>People:</strong> If including people, ensure proper safety gear and professional appearance</li>
+                <li><strong>Branding:</strong> Ensure images align with professional laboratory aesthetic</li>
+            </ul>
+        </div>
+
+        <!-- Stock Photo Resources -->
+        <div class="tips" style="border-color: #059669; background: #f0fdf4;">
+            <h3 style="color: #059669;">🖼️ Where to Get Images</h3>
+            <p><strong>Option 1: Professional Photography (Recommended)</strong></p>
+            <ul>
+                <li>Hire a photographer for custom shots of your actual facility</li>
+                <li>Shows authenticity and builds trust with clients</li>
+            </ul>
+
+            <p style="margin-top: 15px;"><strong>Option 2: Stock Photography (Quick Start)</strong></p>
+            <ul>
+                <li><a href="https://unsplash.com/s/photos/laboratory" target="_blank" style="color: #059669;">Unsplash</a> - Free high-quality images</li>
+                <li><a href="https://www.pexels.com/search/laboratory/" target="_blank" style="color: #059669;">Pexels</a> - Free stock photos</li>
+                <li>Search terms: "laboratory", "scientific testing", "quality control", "material testing"</li>
+            </ul>
+
+            <p style="margin-top: 15px;"><strong>Option 3: Your Own Photos</strong></p>
+            <ul>
+                <li>Use a good smartphone camera or DSLR</li>
+                <li>Natural lighting or proper lab lighting</li>
+                <li>Multiple angles of equipment and facility</li>
+            </ul>
+        </div>
+
+        <!-- Implementation Status -->
+        <div class="section" style="border-left-color: #059669;">
+            <h2 style="color: #059669;">✅ Implementation Status</h2>
+            <p><span class="checkmark">✓</span> Website is ready to display laboratory images</p>
+            <p><span class="checkmark">✓</span> Image directories created in <code>/public/images/</code></p>
+            <p><span class="checkmark">✓</span> Fallback gradients in place if images not added yet</p>
+            <p><span class="checkmark">✓</span> Responsive design for all screen sizes</p>
+            <p><span class="checkmark">✓</span> Professional overlay for text readability</p>
+
+            <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 5px;">
+                <strong style="color: #1e40af;">Next Steps:</strong>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li>Add <code>lab-background.jpg</code> to <code>/public/images/hero/</code> folder</li>
+                    <li>Add <code>facility.jpg</code> to <code>/public/images/about/</code> folder</li>
+                    <li>Add three facility images to <code>/public/images/about/</code> folder</li>
+                    <li>Refresh your website to see the images in action!</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

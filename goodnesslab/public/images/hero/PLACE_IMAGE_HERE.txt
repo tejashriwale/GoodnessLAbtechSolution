@@ -1,0 +1,20 @@
+PLACE YOUR LABORATORY BACKGROUND IMAGE HERE
+==========================================
+
+Filename: lab-background.jpg
+Recommended Size: 1920x1080px or larger
+Format: JPG or WebP
+
+QUICK TEST - Download a sample laboratory image:
+1. Go to: https://unsplash.com/photos/oZuBNC-6E2s
+2. Download the image
+3. Rename it to: lab-background.jpg
+4. Place it in this folder: /public/images/hero/
+5. Refresh your website
+
+Alternative sample images:
+- https://unsplash.com/photos/ZiQkhI7417A (microscope)
+- https://unsplash.com/photos/1rBg5YSi00c (laboratory equipment)
+- https://unsplash.com/photos/gYdjLb6dZV4 (laboratory interior)
+
+The website will automatically display the image once you add it here!
