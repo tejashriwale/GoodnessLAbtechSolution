@@ -1,6 +1,6 @@
 export const COMPANY_INFO = {
   name: "Goodness Labtech Solutions LLP",
-  tagline: "Your trusted partner for material testing",
+  tagline: "Your Trusted Partner For Material Testing",
   fullTitle: "Goodness Lab : A Accredited Lab",
   description: "NABL-accredited material testing laboratory dedicated to providing the highest degree of accuracy, fast turnaround time, affordable cost, and customer satisfaction.",
 

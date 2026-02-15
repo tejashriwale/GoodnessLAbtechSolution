@@ -2,7 +2,9 @@ import {
   HeroSection,
   ValuePropositions,
   ServicesOverview,
+  EquipmentSection,
   TestimonialsSection,
+  WriteReviewSection,
   AccreditationBanner,
   ContactCTA,
 } from '@/components/home';
@@ -13,7 +15,9 @@ export default function HomePage() {
       <HeroSection />
       <ValuePropositions />
       <ServicesOverview />
+      <EquipmentSection />
       <TestimonialsSection />
+      <WriteReviewSection />
       <AccreditationBanner />
       <ContactCTA />
     </div>

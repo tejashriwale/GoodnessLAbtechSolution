@@ -1,35 +1,96 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaAward, FaCheckCircle } from 'react-icons/fa';
 import { COMPANY_INFO } from '@/lib/constants';
 
+const HERO_IMAGES = [
+  '/images/hero-1.jpg',
+  '/images/hero-2.jpg',
+  '/images/hero-3.png',
+  '/images/hero-4.avif',
+  '/images/hero-5.jpg',
+];
+
 export const HeroSection: React.FC = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [nextImage, setNextImage] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const goToNext = useCallback(() => {
+    setIsTransitioning(true);
+    setNextImage((currentImage + 1) % HERO_IMAGES.length);
+    setTimeout(() => {
+      setCurrentImage((prev) => (prev + 1) % HERO_IMAGES.length);
+      setIsTransitioning(false);
+    }, 1000);
+  }, [currentImage]);
+
+  useEffect(() => {
+    const interval = setInterval(goToNext, 5000);
+    return () => clearInterval(interval);
+  }, [goToNext]);
+
   return (
     <section className="relative min-h-[600px] lg:min-h-[700px] text-white overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Images with crossfade */}
       <div className="absolute inset-0">
-        {/* Material Testing Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80), url(/images/hero/lab-background.jpg)`,
-            backgroundColor: '#3b82f6',
-          }}
-        >
-          {/* Light overlay to let image show through */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/40 via-blue-500/30 to-blue-700/40"></div>
+        {/* Current image */}
+        <div className="absolute inset-0">
+          <Image
+            src={HERO_IMAGES[currentImage]}
+            alt="Goodness Labtech Laboratory"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
         </div>
 
-        {/* Strong gradient overlay for text highlight */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-primary-800/60 to-primary-700/40"></div>
+        {/* Next image fading in */}
+        <div className={`absolute inset-0 transition-opacity duration-1000 ${
+          isTransitioning ? 'opacity-100' : 'opacity-0'
+        }`}>
+          <Image
+            src={HERO_IMAGES[nextImage]}
+            alt="Goodness Labtech Laboratory"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
 
-        {/* Additional bottom gradient for text separation */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary-900/50"></div>
+        {/* Overlay gradients */}
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/80 via-neutral-900/50 to-neutral-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-neutral-900/60" />
       </div>
 
-      <div className="container-custom relative py-20 sm:py-24 lg:py-32">
+      {/* Slide indicators */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        {HERO_IMAGES.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => {
+              setIsTransitioning(true);
+              setNextImage(index);
+              setTimeout(() => {
+                setCurrentImage(index);
+                setIsTransitioning(false);
+              }, 1000);
+            }}
+            className={`h-1.5 rounded-full transition-all duration-500 ${
+              index === currentImage
+                ? 'w-8 bg-accent-gold'
+                : 'w-3 bg-white/40 hover:bg-white/60'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+
+      <div className="container-custom relative z-10 py-20 sm:py-24 lg:py-32">
         <div className="max-w-3xl">
           {/* NABL Badge */}
           <div className="inline-flex items-center gap-2 bg-accent-gold/90 backdrop-blur-md border-2 border-accent-gold text-primary-900 px-5 py-2.5 rounded-full font-bold text-sm mb-6 shadow-2xl">
